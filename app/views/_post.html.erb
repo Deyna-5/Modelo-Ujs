@@ -1,0 +1,5 @@
+<td><%= post.tile %></td>
+<td><%= post.content %></td>
+<td><%=link_to "Show", post %></td>
+<td><%=link_to "Editar", edit_post_path(post), remote: true %></td>
+<td><%=link_to "Eliminar", post, method: :destroy, remote: true, data: {confirm: "¿Seguro desea eliminarlo?"} %></td>
